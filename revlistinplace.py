@@ -32,6 +32,8 @@ def rev_list_in_place(lst):
     assignment!
     """
 
+    for i in range((len(lst)//2)):
+        lst[i], lst[-i-1] = lst[-i-1], lst[i]
 
 
 if __name__ == '__main__':
